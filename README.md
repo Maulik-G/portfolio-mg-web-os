@@ -10,7 +10,7 @@ It started as inspiration from Candy’s Y2K OS but has evolved into my **own re
 
 ## Preview
 
-![Screenshot of MG Web OS](./assets/screenshots/desktop.png)  
+[![Screenshot of MG Web OS](./assets/screenshots/home.png)](https://www.maulikgaur.me/)
 
 
 ---
