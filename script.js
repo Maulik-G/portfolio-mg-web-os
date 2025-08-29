@@ -504,7 +504,7 @@ class AppManager {
                 <div class="resume">
                     <select id="resumeSelect">
                         <option value="">-- Select Resume --</option>
-                        <option value="/resumes/Maulik.pdf">Web Developer</option>
+                        <option value="/assets/resumes/Maulik.pdf">Web Developer</option>
                     </select>
                     <div style="margin-top:10px;">
                         <button id="zoomIn">+</button>
@@ -1021,7 +1021,7 @@ class AppManager {
                                 </div>
                                 <div class="window-body surprise-body">
                                     <video width="640" height="360" controls autoplay loop playsinline>
-                                        <source src="/surprise.mp4" type="video/mp4" >
+                                        <source src="/assets/surprise.mp4" type="video/mp4" >
                                         Your browser does not support the video tag.
                                     </video>
                                     <div id="restart-wrapper" class="restart-wrapper">
