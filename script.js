@@ -1140,8 +1140,13 @@ class WindowManager {
         const win = document.createElement("div");
         win.className = "window";
         win.style.zIndex = this.zIndex++;
-        win.style.left = "50px";
+        win.style.left = "300px";
         win.style.top = "50px";
+
+        // Center the element
+        // win.style.left = '50%';
+        // win.style.top = '50%';
+        // win.style.transform = 'translate(-50%, -50%)';
 
         win.innerHTML = `
             <div class="window-title">
@@ -1406,7 +1411,7 @@ bootScreen.innerHTML = "";
 
 //Typing Effect
 let charIndex = 0;
-const typeSpeed = 10;
+const typeSpeed = 1;
 
 function typeText() {
     if (charIndex < bootText.length) {
