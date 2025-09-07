@@ -560,6 +560,10 @@ class AppManager {
                             <img src="icons/aura.png" width="32" height="32" alt="Aura AI Voice Agent" />
                             <span>Aura - AI Voice Agent</span>
                         </div>
+                        <div class="file-item" onclick="window.open('https://ai-mock-interview-shortlisted.vercel.app/', '_blank')">
+                            <img src="icons/shortlisted.svg" width="32" height="32" alt="ShortListed - AI Mock Interview" />
+                            <span>ShortListed AI Mock Interview</span>
+                        </div>
                     </div>
                 </div>
             `;
