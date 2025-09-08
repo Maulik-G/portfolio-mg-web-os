@@ -405,7 +405,7 @@ class AppManager {
             init: (window) => {
                 const fileList = window.querySelector(".file-explorer");
 
-                fileList.addEventListener("dblclick", (e) => {
+                fileList.addEventListener("click", (e) => {
                     const fileItem = e.target.closest(".file-item");
                     if (fileItem) {
                         const path = fileItem.dataset.path;
@@ -571,7 +571,7 @@ class AppManager {
         init: (window) => {
             // This is new. It opens links instead of loading files.
             const fileList = window.querySelector(".file-explorer");
-            fileList.addEventListener("dblclick", (e) => {
+            fileList.addEventListener("click", (e) => {
                 const fileItem = e.target.closest(".file-item");
                 if (fileItem) {
                     const link = fileItem.dataset.path;
