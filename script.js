@@ -13,7 +13,9 @@ class FileSystem {
                     "welcome.txt": {
                         type: "file",
                         content:
-                            `Welcome to MG Web OS! \nSurprise when you set the year to 2007 in settings!`,
+                            `Hi, I am Maulik.\nFull Stack Web Developer.\nCurrently actively seeking new opportunities.
+                            \n
+                            \nSurprise when you set the year to 2007 in settings!`,
                         modified: new Date().toISOString(),
                     },
                 },
@@ -504,7 +506,7 @@ class AppManager {
                 <div class="resume">
                     <select id="resumeSelect">
                         <option value="">-- Select Resume --</option>
-                        <option value="/assets/resumes/Maulik.pdf">Web Developer</option>
+                        <option value="/assets/resumes/Maulik_Resume.pdf">Web Developer</option>
                     </select>
                     <div style="margin-top:10px;">
                         <button id="zoomIn">+</button>
