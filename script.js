@@ -616,6 +616,8 @@ class AppManager {
                 let score = 0;
                 let gameRunning = false;
                 let gameLoop;
+                let speed = 200;
+                let minSpeed = 60;
 
                 // Canvas size adapts to window
                 let maxSize = Math.min(window.clientWidth - 40, 400);
@@ -672,15 +674,19 @@ class AppManager {
                 // Game toggle
                 function toggleGame() {
                     gameRunning = !gameRunning;
-                    if (gameRunning) {
-                        gameLoop = setInterval(() => {
-                            updateGame();
-                            drawGame();
-                        }, 100);
-                    } else {
+                    if (gameRunning) startLoop();
+                    else {
                         clearInterval(gameLoop);
                     }
                 }
+
+                function startLoop() {
+                    clearInterval(gameLoop);
+                    gameLoop = setInterval(() => {
+                        updateGame();
+                        drawGame();
+                    }, speed);
+                } 
 
                 function drawGame() {
                     ctx.fillStyle = "black";
@@ -749,6 +755,11 @@ class AppManager {
                     if (head.x === food.x && head.y === food.y) {
                         score += 10;
                         spawnFood();
+
+                        if (speed > minSpeed) {
+                            speed -= 10; // speed up every food
+                            startLoop(); // restart loop with new speed
+                        }
                     } else {
                         snake.pop();
                     }
