@@ -13,9 +13,8 @@ class FileSystem {
                     "welcome.txt": {
                         type: "file",
                         content:
-                            `Hi, I am Maulik.\nFull Stack Web Developer.\nActively seeking new opportunities.
-                            \n
-                            \nSurprise when you set the year to 2007 in settings!`,
+                            `Hi, I am Maulik.\nFull Stack Developer.\nSalesforce.\nGenerative AI.
+                            \nActively seeking new opportunities.`,
                         modified: new Date().toISOString(),
                     },
                 },
