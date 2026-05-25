@@ -91,6 +91,7 @@ body {
 
 .fade-out {
     animation: fadeOut 1s forwards;
+    pointer-events: none;
 }
 
 @keyframes fadeOut {

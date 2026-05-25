@@ -1438,7 +1438,8 @@ function typeText() {
         const boot = new Audio("sfx/boot.mp3");
         setTimeout(() => {
             bootScreen.classList.add("fade-out");
-            boot.play();
+            boot.play().catch(e => console.warn("Autoplay blocked:", e));
+            setTimeout(() => bootScreen.remove(), 1000);
             //Open File after 1500ms
             setTimeout(openWelcomeFile, 15);
         }, 1000);
